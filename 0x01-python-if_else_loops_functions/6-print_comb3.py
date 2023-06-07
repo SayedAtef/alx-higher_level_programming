@@ -5,4 +5,3 @@ for firstDigit in range(0, 10):
             print("{}{}".format(firstDigit, secondDigit))
         else:
             print("{}{}".format(firstDigit, secondDigit), end=", ")
-
