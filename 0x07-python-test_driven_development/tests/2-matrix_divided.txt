@@ -1,0 +1,1 @@
+tests for dividing all elements of matrix
