@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-"""Define a rectangle"""
+""" define a rectangle """
+
 
 class Rectangle:
     """ class rectangle"""
     def __init__(self, width=0, height=0):
+        """ Instantiation with optional width and height"""
         self.width = width
         self.height = height
 
@@ -35,7 +37,7 @@ class Rectangle:
         return (self.__width * self.__height)
 
     def perimeter(self):
-        if self.__width is 0 or self.__height is 0:
+	if self.__width is 0 or self.__height is 0:
             return 0
         return ((self.__width + self.__height) * 2)
 
@@ -43,4 +45,4 @@ class Rectangle:
         if self.__width is 0 or self.__height is 0:
             return ""
         return ("\n".join(["".join(["#" for i in range(self.__width)])
-                for x in range(self.__height)]))
+                for j in range(self.__height)]))
