@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""class Student."""
+"""Module for class Student"""
 
 
 class Student:
@@ -11,7 +11,7 @@ class Student:
             age (int): age of student.
         Methods:
             __init__ - initialize Student instance.
-            to_json - retrieves represntation of Student instance.
+            to_json - retrieves representaion of Student instance.
     """
     def __init__(self, first_name, last_name, age):
         """Initialise Student instance."""
@@ -19,8 +19,13 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    def to_json(self):
-        """retrieves a representation of Student."""
+    def to_json(self, attr=None):
+        """
+            retrieves a representation of Student.
+            Args:
+                attr (list): attr names that retrieved.
+        """
+
         if attr is not None:
             res = {k: self.__dict__[k] for k in self.__dict__.keys() & attr}
             return res
