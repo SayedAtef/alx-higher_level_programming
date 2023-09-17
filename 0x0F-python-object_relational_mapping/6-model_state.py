@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Class"""
+"""Start link class to table in database 
+"""
 
 from sys import argv
 from model_state import Base, State
